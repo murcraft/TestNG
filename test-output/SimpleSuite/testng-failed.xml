@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SimpleSuite]">
+  <parameter name="login" value="tathtp"/>
+  <parameter name="pass" value="Klopik123"/>
+  <test name="SimpleTest">
+    <parameter name="login" value="tathtp"/>
+    <parameter name="pass" value="Klopik123"/>
+    <groups>
+      <run>
+        <include name=".*.login"/>
+        <exclude name="firefox.logout"/>
+      </run>
+    </groups>
+    <packages>
+      <package name="by.htp.testng.*"/>
+    </packages>
+    <classes>
+      <class name="by.htp.testng.ComplexSimpleTestExample"/>
+      <class name="by.htp.testng.SimpleTestExample"/>
+      <class name="by.htp.testng.TestDataProviderExample"/>
+    </classes>
+  </test> <!-- SimpleTest -->
+</suite> <!-- Failed suite [SimpleSuite] -->
