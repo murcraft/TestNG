@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SimpleSuite">
+	<listeners>
+		<listener class-name="by.htp.listener.TestFailCustomerListener"/>
+	</listeners>
+	
+	<test name="SimpleTest">
+		<parameter name="login" value="tathtp"/>
+		<parameter name="pass" value="Klopik123"/>
+		
+	    <groups>
+		    <run>
+		    	<include name=".*.login"/>
+		    	<exclude name="firefox.logout"/>
+<!--  		    	<include name="firefox"></include> -->
+		    </run>
+    </groups>
+    
+    <packages>
+    	<package name="by.htp.testng.*"/>
+    </packages>
+    
+ <!--	<classes>
+ 	<class name="by.htp.testng.TestDataProviderExample"/>
+		  	<class name="by.htp.testng.SimpleTestExample"/>
+			
+		</classes>-->
+
+	</test>
+</suite>

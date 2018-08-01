@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [SimpleSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listener.TestFailCustomerListener"/>
+  </listeners>
+  <test thread-count="5" name="SimpleTest(failed)">
+    <groups>
+      <run>
+        <include name="login"/>
+        <exclude name="firefox.logout"/>
+      </run>
+    </groups>
     <classes>
-      <class name="by.htp.testng.SimpleTestExample">
+      <class name="by.htp.simple.SimpleTest">
         <methods>
-          <include name="testSmthAMeth"/>
-          <include name="testSmthACl"/>
-          <include name="testSmthAT"/>
-          <include name="testSmthBMeth"/>
-          <include name="testSmthAS"/>
-          <include name="testSmthBT"/>
-          <include name="testSomething2W"/>
-          <include name="testSmthBS"/>
-          <include name="testSmthW"/>
-          <include name="testSmthBCL"/>
+          <include name="testSmth"/>
+          <include name="doSmth"/>
         </methods>
-      </class> <!-- by.htp.testng.SimpleTestExample -->
+      </class> <!-- by.htp.simple.SimpleTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SimpleTest(failed) -->
+</suite> <!-- Failed suite [SimpleSuite] -->

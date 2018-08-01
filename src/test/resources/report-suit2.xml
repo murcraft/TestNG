@@ -7,14 +7,15 @@
 	</listeners>
 	
 	<test name="SimpleTest">
-	
-    <packages>
-    	<package name="by.htp.testng.*"/>
-    </packages>
+	    <groups>
+		    <run>
+		    	<include name="login"/>
+		    	<exclude name="firefox.logout"/>
+		    </run>
+    </groups>
     
-	<classes>
- 	<class name="by.htp.testng.TestDataProviderExample"/>
-		<class name="by.htp.testng.SimpleTestExample"/>	
+ 	<classes>
+ 		<class name="by.htp.simple.SimpleTest"/>
 	</classes>
 
 	</test>
