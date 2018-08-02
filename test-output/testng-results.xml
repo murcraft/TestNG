@@ -10,20 +10,23 @@
     <line>
       <![CDATA[!!!Test onTestFailure]]>
     </line>
+    <line>
+      <![CDATA[<img src="test-output/Screenshot/screenshot1533149124562.png">]]>
+    </line>
   </reporter-output>
-  <suite started-at="2018-08-01T16:43:21Z" name="SimpleSuite" finished-at="2018-08-01T16:43:21Z" duration-ms="59">
+  <suite started-at="2018-08-01T18:45:19Z" name="SimpleSuite" finished-at="2018-08-01T18:45:24Z" duration-ms="5226">
     <groups>
       <group name="login">
-        <method signature="SimpleTest.testSmth()[pri:0, instance:by.htp.simple.SimpleTest@37271612]" name="testSmth" class="by.htp.simple.SimpleTest"/>
+        <method signature="SimpleTest.testSmth()[pri:0, instance:by.htp.simple.SimpleTest@7c1e2a9e]" name="testSmth" class="by.htp.simple.SimpleTest"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2018-08-01T16:43:21Z" name="SimpleTest" finished-at="2018-08-01T16:43:21Z" duration-ms="59">
+    <test started-at="2018-08-01T18:45:19Z" name="SimpleTest" finished-at="2018-08-01T18:45:24Z" duration-ms="5226">
       <class name="by.htp.simple.SimpleTest">
-        <test-method is-config="true" signature="doSmth()[pri:0, instance:by.htp.simple.SimpleTest@37271612]" started-at="2018-08-01T16:43:21Z" name="doSmth" finished-at="2018-08-01T16:43:21Z" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="doSmth()[pri:0, instance:by.htp.simple.SimpleTest@7c1e2a9e]" started-at="2018-08-01T18:45:19Z" name="doSmth" finished-at="2018-08-01T18:45:19Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSmth -->
-        <test-method signature="testSmth()[pri:0, instance:by.htp.simple.SimpleTest@37271612]" started-at="2018-08-01T16:43:21Z" name="testSmth" finished-at="2018-08-01T16:43:21Z" duration-ms="14" status="FAIL">
+        <test-method signature="testSmth()[pri:0, instance:by.htp.simple.SimpleTest@7c1e2a9e]" started-at="2018-08-01T18:45:19Z" name="testSmth" finished-at="2018-08-01T18:45:23Z" duration-ms="4307" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -32,7 +35,7 @@
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.fail(Assert.java:103)
-at by.htp.simple.SimpleTest.testSmth(SimpleTest.java:18)
+at by.htp.simple.SimpleTest.testSmth(SimpleTest.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,6 +70,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
             <line>
               <![CDATA[!!!Test onTestFailure]]>
+            </line>
+            <line>
+              <![CDATA[<img src="test-output/Screenshot/screenshot1533149124562.png">]]>
             </line>
           </reporter-output>
         </test-method> <!-- testSmth -->
